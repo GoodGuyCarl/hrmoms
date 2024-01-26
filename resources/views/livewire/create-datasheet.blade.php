@@ -1,32 +1,31 @@
 <div class="bg-gray-100 rounded-xl shadow-md p-5">
     <h1 class="text-2xl font-medium">Create a new datasheet</h1>
-    <ol class="flex justify-between flex-wrap">
-        <li class="">
-            1. Personal Information
-        </li>
-        <li class="">
-            2. Family Background
-        </li>
-        <li class="">
-            3. Educational Background
-        </li>
-        <li class="">
-            4. Civil Service Eligibility
-        </li>
-        <li class="">
-            5. Work Experience
-        </li>
-        <li class="">
-            6. Voluntary Work or Involvement in Civic/Non-Government/People/Voluntary Organization/s
-        </li>
-        <li>
-            7. Training Programs Attended
-        </li>
-        <li>
-            8. Other Information
-        </li>
-    </ol>
-
+{{--    <ol class="flex justify-between flex-wrap">--}}
+{{--        <li class="">--}}
+{{--            1. Personal Information--}}
+{{--        </li>--}}
+{{--        <li class="">--}}
+{{--            2. Family Background--}}
+{{--        </li>--}}
+{{--        <li class="">--}}
+{{--            3. Educational Background--}}
+{{--        </li>--}}
+{{--        <li class="">--}}
+{{--            4. Civil Service Eligibility--}}
+{{--        </li>--}}
+{{--        <li class="">--}}
+{{--            5. Work Experience--}}
+{{--        </li>--}}
+{{--        <li class="">--}}
+{{--            6. Voluntary Work or Involvement in Civic/Non-Government/People/Voluntary Organization/s--}}
+{{--        </li>--}}
+{{--        <li>--}}
+{{--            7. Training Programs Attended--}}
+{{--        </li>--}}
+{{--        <li>--}}
+{{--            8. Other Information--}}
+{{--        </li>--}}
+{{--    </ol>--}}
     <div class="flex justify-between">
         <button {{ $currentStep == 1 ? 'disabled' : '' }} class="disabled:text-red-500 p-3 rounded-xl drop-shadow">Previous</button>
         <button {{ $currentStep == 0/* max */ ? 'disabled' : '' }}>Next</button>

@@ -7,23 +7,19 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void
     {
-        Schema::create('spouse__information', function (Blueprint $table) {
+        Schema::create('parent__information', function (Blueprint $table) {
             $table->id();
             $table->integer('datasheet_id');
+            $table->enum('type', ['father', 'mother']);
             $table->string('surname');
             $table->string('firstname');
             $table->string('middlename');
             $table->string('suffix');
-            $table->string('occupation');
-            $table->string('employer_business_name');
-            $table->string('business_address');
-            $table->string('contact_no');
         });
     }
 
     public function down(): void
     {
-        Schema::dropIfExists('spouseInformation');
+        Schema::dropIfExists('parent__information');
     }
-
 };

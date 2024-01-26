@@ -3,25 +3,21 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Spouse_Information extends Model
+class Parent_Information extends Model
 {
     public $timestamps = false;
 
     protected $fillable = [
         'datasheet_id',
+        'type',
         'surname',
         'firstname',
         'middlename',
         'suffix',
-        'occupation',
-        'employer_business_name',
-        'business_address',
-        'contact_no',
     ];
 
-    public function datasheet(): BelongsTo
+    public function datasheet()
     {
         return $this->belongsTo(Datasheet::class, 'datasheet_id', 'id');
     }

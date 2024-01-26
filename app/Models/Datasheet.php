@@ -36,8 +36,15 @@ class Datasheet extends Model
         return $this->hasOne(Spouse_Information::class);
     }
 
+    public function parent_information()
+    {
+        return $this->hasMany(Parent_Information::class);
+    }
     public function address()
     {
         return $this->hasMany(Address::class);
+    }
+    public function question(){
+        return $this->hasMany(Question::class);
     }
 }
