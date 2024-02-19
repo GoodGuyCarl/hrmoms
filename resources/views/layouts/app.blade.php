@@ -22,12 +22,11 @@
 </head>
 <body class="font-poppins antialiased">
 <div class="dark:bg-gray-800">
-    <div class="min-h-screen bg-gray-100">
-        <livewire:sidebar>
-            <div class="p-8 sm:ml-72">
-                {{ $slot }}
-            </div>
-        </livewire:sidebar>
+    <div class="flex min-h-screen bg-gray-100">
+        <livewire:sidebar />
+        <div class="m-4 flex-1 overflow-x-hidden">
+            {{ $slot }}
+        </div>
     </div>
 </div>
 @livewireScripts
